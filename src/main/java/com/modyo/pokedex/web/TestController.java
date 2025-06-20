@@ -14,6 +14,11 @@ public class TestController {
     return ResponseEntity.ok().body(Map.of("Testing", "Up and runninggggggg"));
   }
 
+  @GetMapping("/test2")
+  public ResponseEntity<Map<String, String>> test2() {
+    return ResponseEntity.ok().body(Map.of("Testing", "Up and runninggggggg"));
+  }
+
   @GetMapping
   public ResponseEntity<Map<String, String>> healthcheck() {
     return ResponseEntity.ok().body(Map.of("Status", "Up"));
